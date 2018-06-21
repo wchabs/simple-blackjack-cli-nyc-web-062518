@@ -65,6 +65,10 @@ def runner
   # code runner here
   welcome
   number = initial_round
-  #hit?(number)
+  
+  until number > 21 do
+    hit?(number)
+  end
+end_game
 end
     
