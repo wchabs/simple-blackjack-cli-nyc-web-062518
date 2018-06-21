@@ -65,6 +65,6 @@ def runner
   # code runner here
   welcome
   number = initial_round
-  hit?(number)
+  #hit?(number)
 end
     
