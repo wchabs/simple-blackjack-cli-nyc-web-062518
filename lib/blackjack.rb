@@ -47,7 +47,6 @@ def hit?(number)
     elsif answer != 'h' && answer != 's'
     invalid_command
     prompt_user
-    #answer = get_user_input
   end
   
   number
@@ -64,5 +63,8 @@ end
 
 def runner
   # code runner here
+  welcome
+  initial_round
+  hit?()
 end
     
