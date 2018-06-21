@@ -30,14 +30,30 @@ end
 
 def initial_round
   # code #initial_round here
+  card1 = deal_card
+  card2 = deal_card
+  sum = card1 + card2
+  display_card_total(sum)
 end
 
-def hit?
+def hit?(number)
   # code hit? here
+  prompt_user
+  answer = get_user_input
+  
+  if answer == 'h'
+    number += deal_card
+    elsif answer != 'h' || answer != 's'
+    invalid_command
+    prompt_user
+  end
+  
+  display_card_total
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a vaid command"
 end
 
 #####################################################
